@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduction</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Cloud Cannon build bug</h1>
+    <p>This repo is a minimal reproduction for the bug I encounter when I use @mightyplow/eleventy-plugin-cache-buster in Cloud Cannon.</p>
+    <p>Both locally and in Cloud Cannon, running <code>npx @11ty/eleventy</code> does not work on a fresh install of this repo without any caches (second time sometimes works, but never when using <code>rm -rf _site && npx npx @11ty/eleventy</code>). Locally, running <code>npm run build</code> works, but that also does not work on Cloud Cannon due to a seemingly unrelated error message.</p>
+</body>
+</html>
